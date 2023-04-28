@@ -21,7 +21,7 @@
   We use tsc filename.any
 
   ## How do we configure Typescript ?
-  We use <pre><code>```console tsc --init ```</code></pre> to create a config file
+  We use <pre><code>``` tsc --init ```</code></pre> to create a config file
 
   How do we debug Typescript files ?
   In vscode, we could click on the debugging option to create a launch.json file
