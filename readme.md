@@ -11,11 +11,11 @@
   - Compilation Time (it will be converted to Javascript first)
 
   ## Types of Typescript ?
-  - any
-  - unknown
-  - never
-  - tuples : used for fixed length array of different types of data
-  - enums : used for fixed constant values
+  - any: used when value could be any (not recommended to use, it's best to always define the exact type to avoid crashes).
+  - unknown: used when type is unknown, like third party library with values of unknown types. other examples are JSON objects or writing apis that accept inputs of unknown type.
+  - never: used when writing a function that always throws an error, or function that won't return anything, or functions with infinite loops.
+  - tuples : used for fixed length array of different types of data.
+  - enums : used for fixed constant values.
 
   ## How do we compile a Typescript file ?
   We use tsc filename.any
