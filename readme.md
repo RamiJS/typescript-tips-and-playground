@@ -81,7 +81,7 @@ the values will start at 0 (small = 0). But, we could change that by setting sma
 
 When we declare a function in Typescript, we always have to set the type of the returned value, as well as declaring the types for any passed properties. For example: 
 
-```
+```typescript
 function sum(num1: number, num2: number): number{
 	return num1 + num2
 }
@@ -91,7 +91,7 @@ if we remove the ```:number``` after the parentheses,  the return value will be 
 
 if our function is not expected to return anything, we could use ```void``` type annotation. 
 
-```
+```typescript
 function sum(): void {
 	// etc...
 }
@@ -99,3 +99,25 @@ function sum(): void {
 
 
 
+### Objects
+
+We could declare objects in Typescript just like we do in Javascript, but we must declare the types of it's properties.
+
+```typescript
+let user: {
+	id: number,
+	name: string
+} = {
+	id: 0,
+	name: 'rami'
+}
+```
+
+with this current implementation, we can't change the values to a different type value. For example, we can't set the ```id``` to a string (we could do that in JS). However, we could change the ```id``` to a different value like 1, but if want to make our variables read only, we could add a ```readonly``` modifier before declaring the type. For example 
+
+```typescript
+let user: {
+readonly id: number,
+// etc...
+}
+```
